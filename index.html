@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>[no-19] reverse a string</h3>
+    <input type="text" id="get">
+    <button onclick="reverse()">click</button>
+    <h1 id="ref"></h1>
+    <script>
+        function reverse(){
+            var inp=document.getElementById("get")
+             var vd=inp.value;
+             var jd=new String
+             var mk=""
+              var j=0
+              for(let i=vd.length-1; i>=0;i--){
+                   jd[j]=vd[i];
+                   
+                   mk+=jd[j];
+                   j++;
+                  
+              }
+             
+             document.getElementById("ref").innerText=mk
+        }
+    </script>
+    
+</body>
+</html>
